@@ -1,5 +1,5 @@
 <pre>
-  xls: 96
+  xls: 97
   title: Institutional DeFi Insurance Protocol for XLS-0065 Vaults
   description: An ecosystem-layer insurance protocol enabling vault depositors to purchase coverage against borrower defaults in XLS-0066 lending vaults.
   author: Will Flores <wflores@wardprotocol.org>
