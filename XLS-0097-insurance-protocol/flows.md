@@ -42,6 +42,8 @@ sequenceDiagram
     D-->>O: Confirm acceptance (policy active)
     
     Note right of A: AMM reserves updated, liability recorded.
+'''
+
 
 ## 2. Claim Validation Flow
 
@@ -90,6 +92,7 @@ sequenceDiagram
     Note over O,E: Step 9 — EscrowCreate Transaction
     O->>E: Create EscrowCreate for payout
     E-->>O: 48-hour dispute countdown initiated
+'''
 
 ## 3. Claim Settlement Flow
 
@@ -124,3 +127,4 @@ sequenceDiagram
         E-->>O: Funds revert to originating AMM reserve wallet
         O->>X: Policy marked "Under Review / Disputed"
     end
+'''
