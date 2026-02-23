@@ -1,4 +1,4 @@
----
+<pre>
   xls: 96
   title: Institutional DeFi Insurance Protocol for XLS-0065 Vaults
   description: An ecosystem-layer insurance protocol enabling vault depositors to purchase coverage against borrower defaults in XLS-0066 lending vaults.
@@ -9,7 +9,7 @@
   requires: XLS-0020, XLS-0030, XLS-0065, XLS-0066, XLS-0070, XLS-0080
   created: 2026-02-23
   updated: 2026-02-23
----
+</pre>
 
 # Institutional DeFi Insurance Protocol for XLS-0065 Vaults
 
