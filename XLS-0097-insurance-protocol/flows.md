@@ -34,12 +34,9 @@ sequenceDiagram
     A-->>O: Return confirmation and reserve ratio
 
     Note over O,N: Step 4 — NFT Policy Issuance  
-    O->>N: Mint Policy NFT (XLS-0020) with metadata:  
-    - PolicyID  
-    - Vault reference  
-    - Reserve ratio  
-    - Expiry and terms  
+    O->>N: Mint Policy NFT (XLS-0020) w/ PolicyID, Vault ref, ratio, terms
     N-->>O: TokenID confirmation
+
 
     Note over O,D: Step 5 — NFT Delivery  
     O->>D: Transfer Policy NFT (via NFTokenOfferAccept)
