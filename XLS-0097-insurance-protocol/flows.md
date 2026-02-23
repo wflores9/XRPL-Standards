@@ -29,6 +29,7 @@ sequenceDiagram
     O->>V: Lock collateral using VaultCreate (XLS-0065)
     V-->>O: VaultID and lock confirmation
 
+
     Note over O,A: Step 3 — Liquidity Allocation  
     O->>A: Allocate LP tokens for reserved coverage in AMM Pool  
     A-->>O: Return confirmation and reserve ratio
@@ -45,6 +46,8 @@ sequenceDiagram
     Note right of A: AMM reserves updated, liability recorded.
 
 ## 2. Claim Validation Flow
+
+```mermaid
 
 ```mermaid
 sequenceDiagram
@@ -64,6 +67,7 @@ sequenceDiagram
     Note over O,N: Step 2 — Policy Metadata Fetch  
     O->>N: Query metadata (coverage amount, validity, expiry)  
     N-->>O: Return policy data
+
 
     Note over O,L: Step 3 — Loan Default Check  
     O->>L: Verify insured loan state  
