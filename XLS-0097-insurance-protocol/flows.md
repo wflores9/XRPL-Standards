@@ -44,7 +44,6 @@ sequenceDiagram
     Note right of A: AMM reserves updated, liability recorded.
 '''
 
-
 ## 2. Claim Validation Flow
 
 ```mermaid
