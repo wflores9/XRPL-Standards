@@ -90,7 +90,6 @@ sequenceDiagram
     Note over O,E: Step 9 — EscrowCreate Transaction
     O->>E: Create EscrowCreate for payout
     E-->>O: 48-hour dispute countdown initiated
-'''
 
 ## 3. Claim Settlement Flow
 
