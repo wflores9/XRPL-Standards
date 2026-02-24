@@ -15,6 +15,7 @@ This document defines the complete operational flows under **XLS-0097** for inst
 ## 1. Policy Issuance Flow
 
 ```mermaid
+
 sequenceDiagram
     participant D as Depositor (Institutional Client)
     participant O as Operator (Underwriting Node)
@@ -46,6 +47,7 @@ sequenceDiagram
 ## 2. Claim Validation Flow
 
 ```mermaid
+
 sequenceDiagram
     participant D as Depositor (Policy Holder)
     participant O as Operator (Claims Assessor)
@@ -90,10 +92,11 @@ sequenceDiagram
     Note over O,E: Step 9 — EscrowCreate Transaction
     O->>E: Create EscrowCreate for payout
     E-->>O: 48-hour dispute countdown initiated
-
+    
 ## 3. Claim Settlement Flow
 
 ```mermaid
+
 sequenceDiagram
     participant O as Operator (Insurer)
     participant E as Escrow (XRPL Payout Channel)
