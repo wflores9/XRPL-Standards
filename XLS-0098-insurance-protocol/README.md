@@ -1,14 +1,15 @@
-# XLS-0098: Default Protection Protocol for XLS-66 Vaults
+---
+xls: 98
+title: Default Protection Protocol for XLS-66 Vaults
+status: Draft
+type: draft
+author: Will Flores <wflores@wardprotocol.org>
+created: 2026-03-01
+requires: XLS-66, XLS-70, XLS-80, XLS-20
+discussion: https://github.com/XRPLF/XRPL-Standards/discussions/474
+---
 
-| Field | Value |
-|-------|-------|
-| Title | Default Protection Protocol for XLS-66 Vaults |
-| Type | Standard |
-| Status | Draft |
-| Author | Will Flores (wflores@wardprotocol.org) |
-| Created | 2026-03-01 |
-| Requires | XLS-66, XLS-70, XLS-80, XLS-20 |
-| Discussion | https://github.com/XRPLF/XRPL-Standards/discussions/474 |
+# XLS-0098: Default Protection Protocol for XLS-66 Vaults
 
 ---
 
@@ -168,7 +169,7 @@ A default event is valid under this specification if ALL of the following are tr
 Single-ledger default signals must not trigger settlement. Implementations MUST wait for ≥ 3 ledger closes before emitting a default event. This prevents manipulation via temporary balance changes.
 
 **6.3 On-Chain Verification**
-All 6 criteria above are verifiable directly from XRPL ledger state. No off-chain data source is required or permitted under this specification.
+All criteria above are verifiable directly from XRPL ledger state. No off-chain data source is required or permitted under this specification.
 
 ---
 
@@ -272,7 +273,7 @@ XRPL does not support general smart contracts. This specification is designed to
 A time-only escrow can be front-run — any party who knows the claim is pending could attempt to finish it. PREIMAGE-SHA-256 ensures only the party holding the secret preimage can collect the payout. This eliminates an entire class of MEV-style attacks.
 
 ### Why NFT non-transferability?
-Insurance policies that can be sold create adverse selection — holders would sell policies on vaults they believe are healthy and retain policies on vaults they believe are distressed. Non-transferability ensures the policy holder is always the party with direct exposure to the vault.
+Coverage policies that can be sold create adverse selection — holders would sell policies on vaults they believe are healthy and retain policies on vaults they believe are distressed. Non-transferability ensures the policy holder is always the party with direct exposure to the vault.
 
 ---
 
